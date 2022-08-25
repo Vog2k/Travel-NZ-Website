@@ -5,29 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-----CSS---->
     <link rel="stylesheet" href="Index.css">
-
+    <link rel="icon" type="image/x-icon" href="images/pngwing.com.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Travel NZ</title>
 </head>
-<body>
-    <nav class="navbar">
-        <h1 class="logo">ADVENTURE</h1>
-        <ul class="nav-links">
-            <li><a href="#"></a>TOUR</li>
-            <li><a href="#"></a>ABOUT US</li>
-            <li><a href="#"></a>CONTACT US</li>
-        </ul>
-    </nav>
+    <body onload="slider()">
+        <div class="banner">
+            <div class="slider">
+                 <img src="/Images/Twizel.crop.jpg" id="slideImg">
+          </div>
+          <div class="overlay">
+            <div class="nav">
+                <div class="logo">
+                    <!--TRY ADD LINK BACK TO HOME--><!--HERE-->
+                    <a href="Home.html">
+                    <img src="images/logo_transparent.png">
+                    </a>
+                </div>
+                <section class="header">
+                    <nav>
+                        <div class="nav-links" id="navLinks">
+                                    <!--LINES BELOW MAKE UP THE NAVBAR ON THE SITE-->
+                                <ul>
+                                    <!--<li><a href="">HOME</a></li>-->
+                                   
+                                    <li><a href="Venues.html">HOME</a></li>
+                                    <li><a href="Gallery.html">TOUR</a></li>
+                                    <li><a href="Calender.html">CONTACT US</a></li>
 
-    <header>
-        <div class="header-content">
-            <h2>Visit New Zealand</h2>
-            <div class="line"></div>
-                <h1>Land of the long white cloud</h1>
-            <a href="#" class="ctn">Learn more</a>
-        </div>
-    </header>
-    
+                                    
+
+                                    
+                                </ul>
+                            </div>
+                                    <div class="flag">
+                                    <i class="fa-duotone fa-flag"style= "cursor: pointer;"></i>
+                                    </div>
+                        </nav>
+                    </section>      
+
+                        <div class="content">
+                            <div style="position: relative;bottom: -160px;">
+                                <div class="wrapper-text">
+                                    
+                                    <h1>AND SO THE ADVENTURE BEGINS</h1>
+                                </div>
+                            <!--<h3>Plan your future now </h3>-->
+                        </div>
+        
+                            
+                                <div style="position: relative;bottom: -160px;">
+                                <button type="button"><a href="EXPLORE.html" style="text-decoration: none; color: white;" class="button">Explore</a></button>
+                         
+                                </div>
+                            </div>
+        
+                    </div>      
+                </div>
+            </div>
 </body>
 </html>
