@@ -19,24 +19,23 @@
     <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
     <a href="#" class="youtube"><i class="fa-solid fa-house"></i></a>
   </div>
-    
-    <div class="main-container" id="home">
-        <div class="navbar">
-            <div class="logo">
+                <div class="logo">
                 <a href="/Index.html"><img src="/Images/logo_transparent.png " alt="LOGO"></a>
                 
             </div>
+    <div class="main-container" id="home">
+        <div class="navbar">
+
+
             <div class="navbar-items">
                 <ul>
                     <li><a href="/Index.html" style="color: rgb(0, 0, 0);
                       text-shadow: 0 0 10px rgba(255, 255, 255, 0.945); font-weight: bold ;">HOME</a></li>
                     <li><a href="/Tour.html">TOUR</a></li>
-                    <li><a href="/Contact.html">CONTACT US</a></li>
-                    <i class="fa-solid fa-flag"></i>
-                    
-                    
+                    <li><a href="/Contact.html">CONTACT US</a></li>   
                 </ul>
             </div>
+            <i class="fa-solid fa-flag" ></i>
         </div>
     </div>
 <div class="banner-image">
@@ -93,13 +92,14 @@
             <img src="/Images/face-covering-disposable_icon.png" alt="">
             <p>Once you arrive in New Zealand
                 Vaccinated and eligible travellers entering New Zealand will be given a pack of rapid antigen tests 
-                <a href="https://www.travellerdeclaration.govt.nz/"> See more</a></p>
+                <br> <a href="https://www.travellerdeclaration.govt.nz/"> See more</a></p>
         </div>
         <div class="safty-items">
             <img src="/Images/plane-png-icon-free-download-158165.png" alt="">
             <p>Preparing to travel to New Zealand by air
                 A step-by-step guide on what you need to do to travel to New Zealand by air and 
-                meet COVID-19 requirements. <a href="https://covid19.health.nz/advice/travelling-new-zealand">See more</a> 
+                meet COVID-19 requirements.<br>
+                <a href="https://covid19.health.nz/advice/travelling-new-zealand">See more</a> 
                 
         </div>
         <div class="safty-items">
@@ -235,26 +235,48 @@
           dots[slideIndex-1].className += " active";
         }
         </script>
-  <div class="MoreInfomation">
-    <h1 class="words">Overview</h1>
-    <p>Cruise the waters of Hauraki Gulf Marine Park in search of whales,
-      dolphins and penguins on a half-day tour from Auckland. 
-      You’ll board a spacious catamaran at Viaduct Harbour and hear expert 
-      guides share informative commentary about New Zealand’s natural wonders. 
-      During the whale and dolphin safari, keep an eye out for six types of 
-      whales that frequent these waters, as well as seabirds such as 
-      Australasian gannets, petrels and terns.
-      
-       <br> <br> - 4.5-hour whale and dolphin watching cruise,
-      <br> <br> - from Auckland Ride aboard a custom-built luxury catamaran for a superb viewing experience 
-      <br> <br> - Keep your eyes peeled for dolphins and as many as six types of whales 
-      <br> <br> - Observe gannets that hunt by plunging into the water at speeds of up to 87 mph (140 kmh) 
-      <br> <br> - Listen to entertaining and informative commentary provided by your captain 
-      and crew Departs from the Viaduct Harbour, 
-      conveniently located in downtown Auckland <br> <br>
-      - Read more about Auckland Dolphin and Whale Watching Eco-Safari Cruise. <a href="https://www.viator.com/tours/Auckland/Auckland-Dolphin-and-Whale-Watching-Cruise/d391-6608AWDS?mcid=56757">Click here</a> </p>
-      <br> <br>
-  </div>
+
+
+<button type="button" class="collapsible">Open for more information</button>
+<div class="content5">
+  <p>Cruise the waters of Hauraki Gulf Marine Park in search of whales,
+    dolphins and penguins on a half-day tour from Auckland. 
+    You’ll board a spacious catamaran at Viaduct Harbour and hear expert 
+    guides share informative commentary about New Zealand’s natural wonders. 
+    During the whale and dolphin safari, keep an eye out for six types of 
+    whales that frequent these waters, as well as seabirds such as 
+    Australasian gannets, petrels and terns.
+    
+     <br> <br> - 4.5-hour whale and dolphin watching cruise,
+    <br> <br> - from Auckland Ride aboard a custom-built luxury catamaran for a superb viewing experience 
+    <br> <br> - Keep your eyes peeled for dolphins and as many as six types of whales 
+    <br> <br> - Observe gannets that hunt by plunging into the water at speeds of up to 87 mph (140 kmh) 
+    <br> <br> - Listen to entertaining and informative commentary provided by your captain 
+    and crew Departs from the Viaduct Harbour, 
+    conveniently located in downtown Auckland <br> <br>
+    - Read more about Auckland Dolphin and Whale Watching Eco-Safari Cruise. <a href="https://www.viator.com/tours/Auckland/Auckland-Dolphin-and-Whale-Watching-Cruise/d391-6608AWDS?mcid=56757">Click here</a> </p>
+    <br> <br>
+</div>
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
         <!---Refferance from W3schools
         https://www.w3schools.com/howto/howto_js_slideshow.asp-->
         
@@ -263,6 +285,7 @@
 
 
     </div>
+            <!----->
     <div class="Parallax1">
         <div class="Heading">
             <h2># NEW ZEALAND</h2>

@@ -1,21 +1,22 @@
+ /* Layout of the page*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    scroll-behavior: smooth;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+}
 
-}
 p{
-    margin: 15px;
-    font-size: 15px;
-    line-height: 20px;
-    color: #000000;
+  margin: 15px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
 }
+
 .icon-bar {
   position: fixed;
   top: 70%;
@@ -23,6 +24,7 @@ p{
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
+  
 }
 
 .icon-bar a {
@@ -33,6 +35,7 @@ p{
   color: white;
   font-size: 20px;
 }
+ /* Mobile view*/
 @media screen and (max-width: 400px){
 .icon-bar {
   position: fixed;
@@ -43,11 +46,12 @@ p{
   z-index: 1;
   }
 }
+ /* Mobile view*/
 @media screen and (max-width: 400px){
 .icon-bar a {
   display: inline-block;
   text-align: center;
-  padding: 28px;
+  padding: 31px;
   transition: all 0.3s ease;
   color: white;
   font-size: 10px;
@@ -97,6 +101,7 @@ p{
     position: absolute;
     justify-content: space-around;
 }
+ /* Mobile view*/
 @media screen and (max-width: 400px) {
   .navbar{
     margin: 35px;
@@ -116,12 +121,21 @@ p{
 }
 .navbar .navbar-items ul li{
     text-transform: capitalize;
-    margin: 0 10px;
+    margin: 0 5px;
     display: inline;
 }
 .navbar .navbar-items ul li a{
     color: #fff;
+    font-size: 25px;
 }
+ /* Tablet view*/
+@media screen and (max-width: 768px){
+  .navbar .navbar-items ul li a{
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
 .navbar  ul li::after{
   content: '';
   width: 0%;
@@ -134,12 +148,20 @@ p{
 .navbar ul li:hover::after{
   width: 100%;
 }
-@media screen and (max-width: 400px) {
-  .fa-solid{
+.fa-solid.fa-flag{
+  position:absolute;
+  top:15px;
+  right:15px;
+  font-size: 20px;
+}
 
-    padding: 0px 15px;
-    justify-content: right;
-    width: fit-content;
+ /* Mobile view*/
+@media screen and (max-width: 400px) {
+  .fa-solid.fa-flag{
+    position:absolute;
+    top:-15px;
+    right:0;
+    
   }
 }
 .logo{
@@ -152,16 +174,30 @@ p{
 .logo img{
   width: 120px;
   position: absolute;
-  margin: 9px 10px;
+  margin: 15px 15px;
   display: inline;
 }
 
+ /* Mobile view*/
 @media screen and (max-width: 400px) {
   .logo img{
     width: 40px;
     height: 40px;
-    left: -30px;
+    left: -20px;
     top: -30px;
+    position: absolute;
+    justify-content: center;
+    display: inline;
+
+  }
+}
+ /* Mobile view*/
+@media screen and (max-width: 414px) {
+  .logo img{
+    width: 40px;
+    height: 40px;
+    left: -15px;
+    top: -15px;
     position: absolute;
     justify-content: center;
     display: inline;
@@ -195,6 +231,7 @@ p{
     transition-duration: 5s;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.274);
 }
+ /* Tablet view*/
 @media screen and (max-width: 700px){
 .banner-content{
   text-align: center;
@@ -288,6 +325,7 @@ p{
   transition-duration: 5s;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
 }
+ /* Tablet view*/
 @media screen and (max-width: 700px) {
   .service{
     position: relative;
@@ -340,12 +378,12 @@ p{
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
 }
 
-
+/* Mobile text view*/
 @media screen and (max-width: 700px) {
   .diff-locations-item h1{
 
     font-size: 13px;
-    margin: 0px 15px;
+    margin: 10px 15px;
     align-items: center;
     text-align: center;
     position: relative;
@@ -354,15 +392,10 @@ p{
     line-height: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    transition: ease-in-out;
-    transition-property: font-size;
-    transition-duration: 5s;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
-    
-
   }
 }
-
+/* Mobile text view*/
 @media screen and (max-width: 700px) {
   .deff-locations p{
     text-align: left;
@@ -382,14 +415,14 @@ p{
       background: #ef9223;
     }
 }
+/* Mobile text view*/
 @media screen and (max-width: 700px) {
   .deff-locations{
     display: flex;
     justify-content: space-between;
-
-    
   }
 }
+
 .text1, .safty-1{
     padding: 5px 10px;
     text-align: center;
@@ -398,12 +431,14 @@ p{
 .safty-1{
     background: #ffffff;
 }
+
 .safty-1{
     display: flex;
     margin-top: 35px;
     justify-content: space-between;
 
 }
+
 .safty-items{
     width: 100%;
     justify-content: center;
@@ -413,12 +448,14 @@ p{
     width: 20%;
     margin-bottom: 25px;
 }
+/* Mobile text view*/
 @media screen and (max-width: 400px){
 .safty-items img{
   width: 40%;
   margin-bottom: 25px;
   }
 }
+
 .safty-items h1, .safty{
   position: relative;
   color: steelblue;
@@ -431,8 +468,9 @@ p{
   transition-property: font-size;
   transition-duration: 5s;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
-
-}@media screen and (max-width: 400px){
+}
+/* Mobile text view*/
+@media screen and (max-width: 400px){
   .safty-items h1, .safty{
     position: relative;
     color: steelblue;
@@ -445,9 +483,9 @@ p{
     transition-property: font-size;
     transition-duration: 5s;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
-
   }
 }
+
 .safty-items p{
   width:100%;
   text-align: left;
@@ -455,11 +493,9 @@ p{
   display: block;
   padding: 2px 20px;
   margin: 0px;
-  
   color: #000;
-  
-  
 }
+/* Mobile text view*/
 @media screen and (max-width: 400px){
   .safty-items p{
     width:100%;
@@ -472,17 +508,19 @@ p{
     color: #000;
   }
 }
+
 .text2{
     padding-top: 50px;
     text-align: center;
-
 }
+
 .info{
     position: relative;
     padding: 3% 0%;
     text-align: center;
     padding-bottom:190px;
 }
+/* Mobile text view*/
 @media screen and (max-width: 400px){
 .info{
   position: relative;
@@ -492,7 +530,6 @@ p{
   }
 }
 
-
 .info a{
     position: relative;
     color: steelblue;
@@ -500,12 +537,11 @@ p{
     font-size: 40px;
     line-height: 48px;
     width: 50%;
-    
     letter-spacing: 3px;
     transition: 1.5s;
     text-shadow: 0 0 10px rgb(182, 182, 182);
-    
 }
+/* Mobile text view*/
 @media screen and (max-width: 400px){
   .info a{
     position: relative;
@@ -524,10 +560,11 @@ p{
   float: left;
   width: 25%;
   padding: 50px 5px;
-  
 }
 
-.rowz {margin: 20px 50px;}
+.rowz {
+  margin: 20px 50px;
+}
 
 /* Clear floats after the columns */
 .rowz:after {
@@ -536,19 +573,21 @@ p{
   clear: both;
 }
 
-/* Responsive columns */
+ /* Mobile view*/
 @media screen and (max-width: 600px) {
   .columnz {
     width: 100%;
-    margin-bottom: 10px;
+    
   }
 }
+ /* Mobile view*/
 @media screen and (max-width: 600px) {
   .rowz {
-    margin: 20px 50px;
+   
     display: block;
   }
 }
+
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -558,6 +597,7 @@ p{
   color: rgb(0, 0, 0);
   
 }
+
 .card:hover{
   transition: 2s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.904);
@@ -578,19 +618,16 @@ p{
     margin: 0;
     text-align: center;
     justify-content: center;
-    
-
-
 }
+
 .travel img{
     width: 100%;
     height: 80%;
-
     margin: 0;
     justify-content: center;
     align-items: center;
-    
 }
+
 .travel-text{
   position: relative;
   color: steelblue;
@@ -604,6 +641,7 @@ p{
   transition-duration: 5s;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
 }
+ /* Mobile view*/
 @media screen and (max-width: 400px){
   .travel-text{
     position: relative;
@@ -619,12 +657,14 @@ p{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
   }
 }
+
 .slider{
     margin:50px ;
     position: relative;
     justify-content: center;
     align-items: center;
 }
+
 /* Slideshow container */
 .slideshow-container {
     width: 50%;
@@ -632,6 +672,7 @@ p{
     margin: auto;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   }
+   /* Tablet view*/
   @media screen and (max-width: 700px){
     .slideshow-container {
       width: 80%;
@@ -639,16 +680,76 @@ p{
       
     }
   }
+
   .MoreInfomation{
     width: 100%;
     justify-content: center;
     text-align: center;
   }
-  .MoreInfomation p{
+
+  .content5 p{
+  border-style: groove;
   color: #000;
   font-size: 25px;
-  line-height: 40px;
+  line-height: 30px;
+  text-align: left;
   }
+
+  .content5 {
+    margin: auto;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   /* Tablet view*/
+  @media screen and (max-width: 700px){
+  .content5 {
+    margin: auto;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+  }
+  /* Desktop and tablet view*/
+  
+  @media screen and (max-width: 900px){
+    .content5 {
+      margin: auto;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+  
+    }
+
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+    margin: 50px;
+  }
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+/* Tablet view*/
   @media screen and (max-width: 700px){
     .MoreInfomation p{
       color: #000;
@@ -664,7 +765,6 @@ p{
     top: 50%;
     width: 30px;
     margin: 20px;
-  
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 18px;
@@ -709,7 +809,7 @@ p{
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
-
+/* Moving background img*/
 .Parallax1{
     background: url(/Images/stars.jpg);
     height: 200px;
@@ -724,8 +824,8 @@ p{
 }
 .Heading h2{
   width: 100%;
-  
 }
+
 .Heading h2{
     position: absolute;
     top: 88%;
@@ -740,6 +840,7 @@ p{
     transition: 1.5s;
     text-shadow: 0 0 10px rgb(97, 97, 97);
 }
+/* Tablet view*/
 @media screen and (max-width: 700px){
   .Heading h2{
     margin:-1px 0px;
@@ -761,16 +862,13 @@ p{
     text-align: center;
     padding: 32px;
 }
-.header {
-    color: #fb2274;
-    font-size: 40px;
-    
-}
+
 .header p{
     color: #000000;
     font-size: 40px;
     
   }
+  /* Mobile text view*/
   @media screen and (max-width: 400px){
     .header p{
       margin:10px ;
@@ -805,11 +903,13 @@ p{
     width: 100%;
   
   }
+
   .column img:hover{
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.877);
   transition-duration: 0.2s;
   cursor: pointer;
   }
+  /* Tablet view*/
   @media screen and (max-width: 800px) {
     .column {
       -ms-flex: 50%;
@@ -817,7 +917,7 @@ p{
       max-width: 50%;
     }
   }
-  
+  /* Mobile view*/
   @media screen and (max-width: 600px) {
     .column {
       -ms-flex: 100%;
@@ -831,7 +931,6 @@ p{
     display: none;
   }
 
-  
   .footer-distributed{
     background: rgb(202, 202, 202);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -978,17 +1077,15 @@ p{
     cursor: pointer;
     background-color:  #ffffff;
     border-radius: 2px;
-  
     font-size: 20px;
     color: #000000;
     text-align: center;
     line-height: 35px;
-  
     margin-right: 3px;
     margin-bottom: 5px;
   }
   
-  
+  /* Device responsive view*/
   @media (max-width: 880px) {
   
     .footer-distributed{
@@ -1009,12 +1106,12 @@ p{
     }
   
   }
+  /*Bottom Logo*/
   .logo1 img{
-    
-    
     width: 150px;
     height: 150px;
   }
+  /* Mobile text view*/
   @media screen and (max-width: 400px){
     .logo1 img{
       
