@@ -36,7 +36,7 @@ p{
 @media screen and (max-width: 400px){
 .icon-bar {
   position: fixed;
-  top: 95%;
+  top: 98%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -45,9 +45,10 @@ p{
 }
 @media screen and (max-width: 400px){
 .icon-bar a {
+  overflow-y: scroll;
   display: inline-block;
   text-align: center;
-  padding: 28px;
+  padding: 11px 31px;
   transition: all 0.3s ease;
   color: white;
   font-size: 10px;
@@ -109,19 +110,31 @@ p{
   }
 }
 .navbar .navbar-items{
-  margin: 20px;
+  margin: 25px;
 }
 .navbar .navbar-items ul{
     display: flex;
 }
 .navbar .navbar-items ul li{
     text-transform: capitalize;
-    margin: 0 10px;
+    margin: 0 5px;
     display: inline;
 }
 .navbar .navbar-items ul li a{
-    color: #fff;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 10px;
+  letter-spacing: 3px;
 }
+@media screen and (max-width: 768px){
+  .navbar .navbar-items ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding: 5px;
+    letter-spacing: 3px;
+  }
+}
+
 .navbar  ul li::after{
   content: '';
   width: 0%;
@@ -134,52 +147,58 @@ p{
 .navbar ul li:hover::after{
   width: 100%;
 }
+.fa-solid.fa-flag{
+  position:absolute;
+  top:15px;
+  right:15px;
+  font-size: 20px;
+}
 @media screen and (max-width: 400px) {
-  .fa-solid{
-
-    padding: 0px 15px;
-    justify-content: right;
-    width: fit-content;
+  .fa-solid.fa-flag{
+    position:absolute;
+    top:-15px;
+    right:0;
+    
   }
 }
 .logo{
-    width: 50px;
-    position: absolute;
-    left: 5px;
-    top: 0;
-    cursor: pointer;
+  width: 50px;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  cursor: pointer;
 }
 .logo img{
-  width: 120px;
-  position: absolute;
-  margin: 9px 10px;
-  display: inline;
+width: 120px;
+position: absolute;
+margin: 9px 10px;
+display: inline;
 }
 
 @media screen and (max-width: 400px) {
-  .logo img{
-    width: 40px;
-    height: 40px;
-    left: -30px;
-    top: -30px;
-    position: absolute;
-    justify-content: center;
-    display: inline;
-    transition: 3s;
-  }
+.logo img{
+  width: 40px;
+  height: 40px;
+  left: -30px;
+  top: -30px;
+  position: absolute;
+  justify-content: center;
+  display: inline;
+  transition: 3s;
+}
 }
 
 .banner-image{
-    background: url(/Images/Wanaka-Header.jpeg)
+    background: url(/Images/Capture1.PNG)
     no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 700px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 .banner-image{
     background: url(/Images/new-zealand-bus-tours-straynz.jpg)
     center;
@@ -192,25 +211,50 @@ p{
     }
 }
 .banner-content{
+    right: -400px;
+    top: 200px;
     text-align: center;
     font-size: 23px;
     margin: 0px 15px;
     align-items: center;
     text-align: center;
     position: relative;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 5px;
     transition: ease-in-out;
     transition-property: font-size;
     transition-duration: 5s;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.274);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
+@media screen and (max-width: 1503px){
+  .banner-content{
+    right: 0px;
+    top: 300px;
+    text-align: center;
+    font-size: 15px;
+    margin: 0px 15px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 5px;
+    transition: ease-in-out;
+    transition-property: font-size;
+    transition-duration: 5s;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+  }
+
 @media screen and (max-width: 700px){
 .banner-content{
+  right: 0px;
+  top: 150px;
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
   margin: 0px 15px;
   align-items: center;
   text-align: center;
@@ -222,20 +266,19 @@ p{
   transition: ease-in-out;
   transition-property: font-size;
   transition-duration: 5s;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.274);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
   }
 }
 
 .banner-content h1{
+  
   text-transform: uppercase;
     line-height: 38px;
     margin-bottom: 15px;
     
 }
-.banner-content {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.658);
-}
+
+
 
 .vertical-center {
     margin: 0;
@@ -246,38 +289,47 @@ p{
     transform: translate(-50%, -50%);
   }
 
-.service, .deff-locations{
+  .service, .deff-locations{
     padding: 5% 5%;
     text-align: center;
 }
 .service{
   position: relative;
-  color: rgb(0, 0, 0);
+  color: steelblue;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 50px;
   text-transform: uppercase;
   letter-spacing: 5px;
-  
-  transition-property: font-size;
-  transition-duration: 1s;
+
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
 }
 @media screen and (max-width: 700px) {
   .service{
     position: relative;
-    color: rgb(0, 0, 0);
-    
-    font-size: 8px;
-    line-height: 15px;
+    color: steelblue;
+
+    font-size: 10px;
+    line-height: 20px;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    
-    transition-property: font-size;
-    transition-duration: 2s;
+    letter-spacing: 5px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
     
   }
+}
+.below-banner{
+  position: relative;
+  color: steelblue;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  transition: 1.5s;
+  transition-property: font-size;
+  transition-duration: 5s;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+  text-align: center;
 }
 
 .small-banner{
@@ -285,11 +337,27 @@ p{
     no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 600px;
     justify-content: center;
     align-items: center;
     display: flex;
+    margin: 150px 0px;
 
+
+}
+@media screen and (max-width: 700px) {
+.small-banner{
+  background: url(/Images/Haka\ banner.jpg)
+  no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 150px 0px;
+
+  }
 }
 
 .container2 {
@@ -334,6 +402,11 @@ p{
   column-66 h1{
     font-size: 48px;
     
+  }
+  @media screen and (max-width: 700px){
+  column-66 h1{
+    font-size: 18px;
+    }  
   }
   .button2 {
     border: none;
@@ -390,169 +463,122 @@ p{
     display: block;
   }
 }
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: rgb(202, 202, 202);
-  color: rgb(0, 0, 0);
-  
-}
-.card:hover{
-  transition: 2s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.904);
-  padding: 16px;
-  text-align: center;
-  background-color: rgb(202, 202, 202);
-  color: rgb(0, 0, 0);
-  
-}
-
 .fa i{font-size:10px;
   color: rgb(196, 11, 11);
 }
+.small-banner2{
 
-.travel{
-    width: 100%;
-    height: 50%;
-    margin: 0;
-    text-align: center;
-    justify-content: center;
-    
+  background: url(/Images/11111.jpg)no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 150px 0px;
 
 
 }
-.travel img{
-    width: 100%;
-    height: 80%;
-
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    
+@media screen and (max-width: 600px){
+.small-banner2{
+  background: url(/Images/11111.jpg)no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 150px 0px;
+  }
 }
-.travel-text{
+
+/*Locations*/
+#about {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 0px 0 20px 0;
+  padding: 50px;
+}
+img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  
+
+}
+.line{
+  width: 50%;
+  color: #000;
+  border: 2px #000;
+}
+
+img:hover {
+  box-shadow: 0 10px 30px rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 2s;
+}
+.image-bg-fluid-height h1{
   position: relative;
-  color: steelblue;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 70px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  align-items: center;
+  text-align: center;
+  color: steelblue;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 48px;
   transition: 1.5s;
-  transition-property: font-size;
-  transition-duration: 5s;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+
 }
-@media screen and (max-width: 400px){
-  .travel-text{
-    position: relative;
-    color: steelblue;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 40px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    transition: 1.5s;
-    transition-property: font-size;
-    transition-duration: 5s;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+
+.image-bg-fluid-height p{
+  position: relative;
+  
+  letter-spacing: 5px;
+  align-items: center;
+  text-align: center;
+  color: steelblue;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  transition: 1.5s;
+  text-shadow: 0 0 10px rgb(97, 97, 97);
+
+}
+@media screen and (max-width: 600px){
+.image-bg-fluid-height h1{
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  align-items: center;
+  text-align: center;
+  color: steelblue;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 48px;
+  transition: 1.5s;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
   }
 }
-.slider{
-    margin:50px ;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 600px){
+.image-bg-fluid-height p{
+  position: relative;
+  
+  letter-spacing: 5px;
+  align-items: center;
+  text-align: center;
+  color: steelblue;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  
+  text-shadow: 0 0 10px rgb(97, 97, 97);
+  }
 }
-/* Slideshow container */
-.slideshow-container {
-    width: 50%;
-    position: relative;
-    margin: auto;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  }
-  @media screen and (max-width: 700px){
-    .slideshow-container {
-      width: 80%;
-      position: relative;
-      
-    }
-  }
-  .MoreInfomation{
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
-  .MoreInfomation p{
-  color: #000;
-  font-size: 25px;
-  line-height: 40px;
-  }
-  @media screen and (max-width: 700px){
-    .MoreInfomation p{
-      color: #000;
-      font-size: 15px;
-      line-height: 20px;
-      
-    }
-  }
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: relative;
-    top: 50%;
-    width: 30px;
-    margin: 20px;
-  
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 0px 0px 0;
-    user-select: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 0px 0 0 0px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(121, 121, 121, 0.8);
-  }
-
-  /* The dots/bullets/indicators */
-
-  .active, .dot:hover {
-    background-color: #be3131;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-
 .Parallax1{
-    background: url(/Images/stars.jpg);
+    background: url(/Images/1D7A9397.jpg);
     height: 200px;
     
 }
@@ -855,6 +881,7 @@ p{
     
     width: 150px;
     height: 150px;
+    
   }
   @media screen and (max-width: 400px){
     .logo1 img{

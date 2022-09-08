@@ -39,7 +39,7 @@ p{
 @media screen and (max-width: 400px){
 .icon-bar {
   position: fixed;
-  top: 95%;
+  top: 98%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -49,9 +49,10 @@ p{
  /* Mobile view*/
 @media screen and (max-width: 400px){
 .icon-bar a {
+  overflow-y: scroll;
   display: inline-block;
   text-align: center;
-  padding: 31px;
+  padding: 11px 31px;
   transition: all 0.3s ease;
   color: white;
   font-size: 10px;
@@ -114,7 +115,7 @@ p{
   }
 }
 .navbar .navbar-items{
-  margin: 20px;
+  margin: 25px;
 }
 .navbar .navbar-items ul{
     display: flex;
@@ -125,14 +126,18 @@ p{
     display: inline;
 }
 .navbar .navbar-items ul li a{
-    color: #fff;
-    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    letter-spacing: 3px;
 }
  /* Tablet view*/
 @media screen and (max-width: 768px){
   .navbar .navbar-items ul li a{
-    color: #fff;
-    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    padding: 10px;
+    letter-spacing: 3px;
   }
 }
 
@@ -205,16 +210,19 @@ p{
   }
 }
 
+
 .banner-image{
-    background: url(/Images/Twizel.crop.jpg)
+  /*https://www.wallpaperflare.com/gray-concrete-road-nature-landscape-new-zealand-mountain-wallpaper-pmntz/download/1920x1080*/
+    background: url(/Images/wallpaperflare.com_wallpaper.jpg)
     no-repeat top center;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 900px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
+
 .banner-content{
     text-align: center;
     font-size: 23px;
@@ -228,9 +236,11 @@ p{
     letter-spacing: 5px;
     transition: ease-in-out;
     transition-property: font-size;
-    transition-duration: 5s;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.274);
+    transition-duration: 3.5s;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
+
+
  /* Tablet view*/
 @media screen and (max-width: 700px){
 .banner-content{
@@ -246,7 +256,7 @@ p{
   letter-spacing: 5px;
   transition: ease-in-out;
   transition-property: font-size;
-  transition-duration: 5s;
+  transition-duration: 3s;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.274);
   }
 }
@@ -258,34 +268,54 @@ p{
     
 }
 .banner-content {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.658);
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 8px rgba(253, 226, 226, 0.979);
 }
 .banner-content p{
   color: #be3131;
+  font-size: 25px;
+  transition: 1.5s;
+
+}
+@media screen and (max-width: 700px){
+  .banner-content p{
+    color: #be3131;
+    font-size: 14px;
+    transition: 1.5s;
+
+  }
+}
+
+.btn {
+  top: 150px;
+  width: 100px;
+  height: 10%;
+  text-align: center;
+  border: 0px solid rgb(7, 144, 255);
+  border-style: solid;
+  box-shadow: 2px solid rgb(0, 0, 0);
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.342);
+
+
 
 }
 .btn a{
-    width: 120px;
-    height: 40px;
-    padding: 5px 10px;
-    text-align: center;
+
     border: 0px solid steelblue;
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
+    color: rgb(255, 255, 255);
     border-style: solid;
-    box-shadow: 2px solid black;
+    box-shadow: 2px solid rgb(0, 0, 0);
     position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 
 
 }
-.button1{
-    height: 80px;
-    padding: 10px;
-    position: relative;
 
-  }
 .vertical-center {
     margin: 0;
     position: absolute;
@@ -295,19 +325,12 @@ p{
     transform: translate(-50%, -50%);
   }
 .btn:hover{
-    background: rgba(0, 0, 0, 0.651);
-    border: 2px solid #fff;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
     transition: 0.9s;
 }
-.btn a{
-    color: #fff;
-    padding: 5px 5px;
-    font-weight: bold;
-}
-.btn::after{
-    transition: 0.9s;
-    
-}
+
+
 .service, .deff-locations{
     padding: 5% 5%;
     text-align: center;
@@ -687,6 +710,7 @@ p{
     text-align: center;
   }
 
+  
   .content5 p{
   border-style: groove;
   color: #000;
