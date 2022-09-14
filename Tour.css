@@ -18,7 +18,7 @@ p{
 }
 .icon-bar {
   position: fixed;
-  top: 70%;
+  top: 60%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -252,14 +252,14 @@ display: inline;
 @media screen and (max-width: 700px){
 .banner-content{
   right: 0px;
-  top: 150px;
+  top: 200px;
   text-align: center;
   font-size: 13px;
   margin: 0px 15px;
   align-items: center;
   text-align: center;
   position: relative;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 5px;
@@ -307,9 +307,9 @@ display: inline;
 @media screen and (max-width: 700px) {
   .service{
     position: relative;
-    color: steelblue;
-
-    font-size: 10px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 8px;
     line-height: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -389,7 +389,7 @@ display: inline;
   @media screen and (max-width: 700px){
   .column-66 p{
     font-size: 15px;
-    line-height: 20px;
+    line-height: 30px;
     }
   }
   
@@ -529,7 +529,7 @@ img:hover {
   font-size: 35px;
   line-height: 48px;
   transition: 1.5s;
-  text-shadow: 0 0 10px rgb(0, 0, 0);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.373);
 
 }
 
@@ -595,12 +595,12 @@ img:hover {
 }
 .Heading h2{
     position: absolute;
-    top: 88%;
+    top: 89%;
     text-transform: uppercase;
     letter-spacing: 5px;
     align-items: center;
     text-align: center;
-    color: steelblue;
+    color: rgb(0, 0, 0);
     font-weight: 400;
     font-size: 80px;
     line-height: 48px;
@@ -613,7 +613,7 @@ img:hover {
     position: absolute;
     justify-content: center;
     align-items: center;
-    color: steelblue;
+    color: rgb(0, 0, 0);
     font-weight: 400;
     font-size: 30px;
     line-height: 48px;
@@ -876,16 +876,27 @@ img:hover {
     }
   
   }
-  .logo1 img{
-    
-    
+  .logo1 {
+
     width: 150px;
     height: 150px;
     
   }
-  @media screen and (max-width: 400px){
-    .logo1 img{
-      
+
+    @media screen and (max-width: 900px){
+    .logo1{
+      left: 280px;
+      top: 0px;
+      position: relative;
+      width: 120px;
+      height: 120px;
+    }
+  }
+    @media screen and (max-width: 400px){
+    .logo1{
+      left: 80px;
+      top: 0px;
+      position: relative;
       width: 120px;
       height: 120px;
     }
