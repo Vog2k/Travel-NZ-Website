@@ -67,7 +67,7 @@
 </div>
     <div class="deff-locations" id="deff-locations">
         <div class="diff-locations-item">
-        <img src="/Images/Auckland-1-640x454.png" alt="diff-image">
+        <img src="/Images/Auckland-1-640x454.png" alt="diff-image" >
         <h1 class="title">North Island</h1>
             <p>The North Island of New Zealand is known for its volcanic activity, national parks and cosmopolitan cities. Home to about three-quarters of New Zealand’s population, it has the country’s largest city, Auckland. Surrounded by bays and islands, it’s known as the “the City of Sails.” At its southern tips is harbourside capital Wellington, home to the national museum, Te Papa.</p>
         </div>
@@ -92,20 +92,21 @@
             <img src="/Images/face-covering-disposable_icon.png" alt="">
             <p>Once you arrive in New Zealand
                 Vaccinated and eligible travellers entering New Zealand will be given a pack of rapid antigen tests 
-                <br> <a href="https://www.travellerdeclaration.govt.nz/"> See more</a></p>
+                <br> <a href="https://www.travellerdeclaration.govt.nz/"target="_blank"> See more</a></p>
+                
         </div>
         <div class="safty-items">
             <img src="/Images/plane-png-icon-free-download-158165.png" alt="">
             <p>Preparing to travel to New Zealand by air
                 A step-by-step guide on what you need to do to travel to New Zealand by air and 
                 meet COVID-19 requirements.<br>
-                <a href="https://covid19.health.nz/advice/travelling-new-zealand">See more</a> 
+                <a href="https://covid19.health.nz/advice/travelling-new-zealand"target="_blank">See more</a> 
                 
         </div>
         <div class="safty-items">
             <img src="/Images/Information logo.png" alt="">
             <p>We enjoy welcoming visitors to New Zealand. Having a valid passport and the right visa is key to a trouble-free entry. 
-                <a href="https://www.immigration.govt.nz/new-zealand-visas"> See more</a></p>
+                <a href="https://www.immigration.govt.nz/new-zealand-visas"target="_blank"> See more</a></p>
         </div>
 
     </div>
@@ -151,138 +152,107 @@
 </div>
   <br>
   <br>
-<div class="travel">
 
-    <h1 class="travel-text">Travel for the experiance</h1>
-    <div class="slideshow-container">
+<section>
+  <h2 class="Main-text">Top 5 Tourist attractions</h2>
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(/Images/lake-wakatipu-queenstown-new-zealand-snow-mountains-4795x3400-2125.jpg);">
+    </div>
+    <div class="col col-text">
+      <div class="Aligner-item">
+        <h1 class="Main-text1">Lake wakatipu queenstown</h1>
+        <p>Surrounded by mountains and shrouded in legend, Lake Wakatipu and its crystal 
+          waters draw visitors as the longest lake on New Zealand's South Island. As 
+          a popular spot for adventure activities—from fishing to catamaran cruises—a day on 
+          Lake Wakatipu is arguably the highlight
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(/Images/franz.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text col-left">
+      <div class="Aligner-item">
+        <h1 class="Main-text1">Franz Josef Glacier </h1>
+        <p>Heli-hike Franz Josef Glacier on a small-group glacier-hiking tour that 
+          explores a maze of ice caves, pinnacles, and crevasses. Flying over Franz Josef 
+          means spectacular panoramic views of the massive glacier. And with ample hiking 
+          time, see more of the glacial landscape than most Franz Josef tours, traveling 
+          mountaineer-style with crampons and ice axes.
+        </p>
+      </div>
+    </div>
+  </div>
 
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 6</div>
-          <img src="/Images/Boat main image.jpg" style="width:100%">
-          <div class="text"></div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 6</div>
-          <img src="/Images/pod.jpg" style="width:100%" height="100%">
-          <div class="text"></div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 6</div>
-          <img src="/Images/dolpins.jpg" style="width:100%">
-          <div class="text"></div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 6</div>
-          <img src="/Images/orca.jpg" style="width:100%">
-          <div class="text"></div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">5 / 6</div>
-          <img src="/Images/Boat and dolpin.jpg" style="width:100%">
-          <div class="text"></div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">6 / 6</div>
-          <img src="/Images/bd.jpg" style="width:100%">
-          <div class="text"></div>
-        </div>
-
-        
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span> 
-          <span class="dot" onclick="currentSlide(5)"></span> 
-          <span class="dot" onclick="currentSlide(6)"></span> 
-        </div>
-        
-        <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(/Images/tongariro.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text">
+      <div class="Aligner-item">
+        <h1 class="Main-text1"> Lake Taupo and Tongariro National Park, North Island</h1>
+        <p>In the center of the North Island and just a few kilometers from glittering 
+          Lake Taupo, New Zealand's largest lake, lies Tongariro National Park. A dual World 
+          Heritage Site due to its spectacular volcanic features and its importance to the 
+          Maori culture, the volcanic peaks of Tongariro, Ngauruhoe, and part of Ruapehu were 
+          in fact gifted by Maori chief Te Heuheu Tukino IV in 1887 to the people of New 
+          Zealand in order to preserve this sacred land.
 
 
-<button type="button" class="collapsible">Open for more information</button>
-<div class="content5">
-  <p>Cruise the waters of Hauraki Gulf Marine Park in search of whales,
-    dolphins and penguins on a half-day tour from Auckland. 
-    You’ll board a spacious catamaran at Viaduct Harbour and hear expert 
-    guides share informative commentary about New Zealand’s natural wonders. 
-    During the whale and dolphin safari, keep an eye out for six types of 
-    whales that frequent these waters, as well as seabirds such as 
-    Australasian gannets, petrels and terns.
-    
-     <br> <br> - 4.5-hour whale and dolphin watching cruise,
-    <br> <br> - from Auckland Ride aboard a custom-built luxury catamaran for a superb viewing experience 
-    <br> <br> - Keep your eyes peeled for dolphins and as many as six types of whales 
-    <br> <br> - Observe gannets that hunt by plunging into the water at speeds of up to 87 mph (140 kmh) 
-    <br> <br> - Listen to entertaining and informative commentary provided by your captain 
-    and crew Departs from the Viaduct Harbour, 
-    conveniently located in downtown Auckland <br> <br>
-    - Read more about Auckland Dolphin and Whale Watching Eco-Safari Cruise. <a href="https://www.viator.com/tours/Auckland/Auckland-Dolphin-and-Whale-Watching-Cruise/d391-6608AWDS?mcid=56757">Click here</a> </p>
-    <br> <br>
-</div>
+        </p>
+      </div>
+    </div>
+  </div>
 
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(/Images/rotorua.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text col-left">
+      <div class="Aligner-item">
+        <h1 class="Main-text1">Rotorua, North Island</h1>
+        <p>On the tumultuous Pacific Ring of Fire, Rotorua is one of the most active 
+          geothermal regions in the world. This is a land where the earth speaks. 
+          Boiling mud pools, hissing geysers, volcanic craters, and steaming thermal 
+          springs betray the forces that birthed much of New Zealand's dramatic topography.
 
+          Visitors can take a walking tour of these geothermal wonders and soak in 
+          steaming mineral springs while visiting a variety of interesting attractions 
+          in order to learn about the region's rich Maori history and culture.
+        </p>
+      </div>
+    </div>
+  </div>
 
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(/Images/abel-tasman.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text">
+      <div class="Aligner-item">
+        <h1 class="Main-text1">Abel Tasman, South Island</h1>
+        <p>The Abel Tasman Coast Track in Abel Tasman National Park is one of New 
+          Zealand's Great Walks. Winding along sparkling Tasman Bay, from Marahau 
+          to Separation Point, this scenic 51-kilometer hike lies in one of the sunniest regions 
+          of the South Island. Along the way, visitors can snorkel or kayak in secluded coves; 
+          enjoy tours that offer the chance to spot fur seals, dolphins, penguins, and a diverse 
+          range of birds; hike through cool forests; and enjoy panoramic views from the rugged 
+          coastal cliffs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-        <!---Refferance from W3schools
-        https://www.w3schools.com/howto/howto_js_slideshow.asp-->
-        
         </body>
         </html> 
 
+        <br>
+        <br>
+        <br>
 
     </div>
             <!----->
@@ -301,26 +271,26 @@ for (i = 0; i < coll.length; i++) {
   
   <div class="row"> 
     <div class="column">
-    <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/Hobbitton.jpg" style="width:100%"></a>
+    <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/Hobbitton.jpg" style="width:100%"></a>
     
-    <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/59.jpg" style="width:100%"></a>
-    <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/c8.jpg" style="width:100%"></a> 
+    <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/59.jpg" style="width:100%"></a>
+    <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/c8.jpg" style="width:100%"></a> 
     
     </div>
     <div class="column">
-      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/img-1570082217-3894-3182-p-9356F021-DBB2-3AB7-76C926398599602A-2544003__aWxvdmVrZWxseQo_CropResizeWzk0MCw1MzAsNzUsImpwZyJd.jpg" style="width:100%"></a>
-        <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/tss.jpg" style="width:100%"></a>
-        <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/windows.jpg" style="width:100%"></a> 
+      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/img-1570082217-3894-3182-p-9356F021-DBB2-3AB7-76C926398599602A-2544003__aWxvdmVrZWxseQo_CropResizeWzk0MCw1MzAsNzUsImpwZyJd.jpg" style="width:100%"></a>
+        <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/tss.jpg" style="width:100%"></a>
+        <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/windows.jpg" style="width:100%"></a> 
     </div>  
     <div class="column">
-      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/img-1536208132-1096-3076-513D2F56-CF17-C1F3-C30476F77B672ECA__aWxvdmVrZWxseQo_FocalPointCropWzQ0MCwxMjgwLDQ5LDQ0LDc1LCJqcGciLDY1LDIuNV0.jpg" style="width:100%"></a>
-        <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/img-1536275057-5932-22788-p-EAA4A130-C508-0D20-B3CEE2CF2AAED220-2544003__aWxvdmVrZWxseQo_CropResizeWzk0MCxudWxsLDgwLCJqcGciXQ.jpg" style="width:100%"></a>
-        <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/weta.jpg" style="width:100%"></a>
+      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/img-1536208132-1096-3076-513D2F56-CF17-C1F3-C30476F77B672ECA__aWxvdmVrZWxseQo_FocalPointCropWzQ0MCwxMjgwLDQ5LDQ0LDc1LCJqcGciLDY1LDIuNV0.jpg" style="width:100%"></a>
+        <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/img-1536275057-5932-22788-p-EAA4A130-C508-0D20-B3CEE2CF2AAED220-2544003__aWxvdmVrZWxseQo_CropResizeWzk0MCxudWxsLDgwLCJqcGciXQ.jpg" style="width:100%"></a>
+        <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/weta.jpg" style="width:100%"></a>
     </div>
     <div class="column">
-      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/ICE.jpg" style="width:100%"></a>
-      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/poi.jpg" style="width:100%"></a>
-      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"><img src="/Images/horses.jpg" style="width:100%"></a>
+      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/ICE.jpg" style="width:100%"></a>
+      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/poi.jpg" style="width:100%"></a>
+      <a href="https://twitter.com/hashtag/newzealand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"target="_blank"><img src="/Images/horses.jpg" style="width:100%"></a>
     </div>
   </div>
 
@@ -333,6 +303,7 @@ for (i = 0; i < coll.length; i++) {
 
 			<div class="footer-left">
         <div class="logo1">
+          <a href="/Index.html"></a>
 				<img src="/Images/logo_transparent.png" alt="">
       </div>
 				<p class="footer-links">

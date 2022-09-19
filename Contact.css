@@ -264,7 +264,7 @@ p{
     transition: ease-in-out;
     transition-property: font-size;
     transition-duration: 3s;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.274);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
     }
   }
 @media screen and (max-width: 1380px){
@@ -287,16 +287,11 @@ p{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
     }
   }
-
+/*Text Content*/
 .banner-content h1{
   text-transform: uppercase;
-    line-height: 38px;
-  
-    
+    line-height: 38px;   
 }
-
-
-
 .vertical-center {
     margin: 0;
     position: absolute;
@@ -307,7 +302,7 @@ p{
   }
 
 .service, .deff-locations{
-    padding: 4% 5%;
+    padding: 3.5% 5%;
     text-align: center;
 }
 .service{
@@ -363,7 +358,7 @@ iframe {
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: steelblue;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -380,6 +375,22 @@ iframe {
     background-color: #f2f2f2;
     padding: 10px;
     margin: 5%;
+  }
+  .container1 h2{
+    
+    position: relative;
+    color: steelblue;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    
+    letter-spacing: 5px;
+    transition: 1.5s;
+    transition-property: font-size;
+    transition-duration: 5s;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+    
+    
   }
   
   /* Create two columns that float next to eachother */
@@ -564,6 +575,10 @@ iframe {
     color:  #000000;
     margin: 20px 0 12px;
     padding: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .footer-distributed .footer-links a{
@@ -572,6 +587,10 @@ iframe {
     font-weight:400;
     text-decoration: none;
     color:  inherit;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .footer-distributed .footer-company-name{
@@ -579,6 +598,12 @@ iframe {
     font-size: 14px;
     font-weight: normal;
     margin: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
   }
   
   /* Footer Center */
@@ -706,7 +731,14 @@ iframe {
   .logo1 img{
     width: 150px;
     height: 150px;
+
     
+  }
+  .logo1{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   @media screen and (max-width: 400px){
     .logo1 img{
