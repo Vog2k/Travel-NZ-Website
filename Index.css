@@ -84,7 +84,7 @@ p{
 
 .youtube {
   background: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: rgb(117, 39, 104);
 }
 
 .content {
@@ -350,7 +350,7 @@ p{
   transition: 1.5s;
   transition-property: font-size;
   transition-duration: 5s;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
 }
  /* Tablet view*/
 @media screen and (max-width: 700px) {
@@ -365,7 +365,7 @@ p{
     transition: 1.5s;
     transition-property: font-size;
     transition-duration: 5s;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
     
   }
 }
@@ -402,7 +402,7 @@ p{
   transition: 1.5s;
   transition-property: font-size;
   transition-duration: 5s;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
 }
 
 /* Mobile text view*/
@@ -419,7 +419,7 @@ p{
     line-height: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
   }
 }
 /* Mobile text view*/
@@ -494,10 +494,10 @@ p{
   transition: 1.5s;
   transition-property: font-size;
   transition-duration: 5s;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
 }
 /* Mobile text view*/
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
   .safty-items h1, .safty{
     position: relative;
     color: steelblue;
@@ -509,7 +509,7 @@ p{
     transition: 1.5s;
     transition-property: font-size;
     transition-duration: 5s;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
   }
 }
 
@@ -518,14 +518,14 @@ p{
   text-align: left;
   position: relative;
   display: block;
-  padding: 2px 20px;
-  margin: 0px;
+  padding: 2px 40px;
+  margin: 0px 10px;
   color: #000;
 }
 /* Mobile text view*/
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
   .safty-items p{
-    width:100%;
+    width:80%;
     text-align: left;
     position: relative;
     display: block;
@@ -735,6 +735,32 @@ p{
   .Aligner-item {
     width: 90%;
   }
+  .Aligner-item p{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .Main-text1{
+    position: relative;
+    color: steelblue;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 1.5s;
+    transition-property: font-size;
+    transition-duration: 5s;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+    justify-content: center;
+    text-align: center;
+    margin: auto; }
 }
 
 

@@ -247,7 +247,7 @@ p{
     transition: ease-in-out;
     transition-property: font-size;
     transition-duration: 5s;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.822);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
 }
 @media screen and (max-width: 700px){
   .banner-content{
@@ -316,7 +316,7 @@ p{
   transition: 1.5s;
   transition-property: font-size;
   transition-duration: 5s;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
 }
 @media screen and (max-width: 700px) {
   .service{
@@ -330,7 +330,7 @@ p{
     transition: 1.5s;
     transition-property: font-size;
     transition-duration: 5s;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
     
   }
 }
@@ -388,7 +388,7 @@ iframe {
     transition: 1.5s;
     transition-property: font-size;
     transition-duration: 5s;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.178);
     
     
   }
@@ -458,7 +458,7 @@ iframe {
     text-transform: uppercase;
     letter-spacing: 5px;
     transition: 1.5s;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
   }
 }
 
